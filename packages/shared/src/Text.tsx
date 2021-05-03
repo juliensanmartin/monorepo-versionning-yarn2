@@ -5,7 +5,12 @@ interface Props {
 }
 
 const Text = ({ children }: Props) => {
-  return <h2>{children}</h2>;
+  return (
+    <div>
+      <span>THIS IS TEXT COMPONENT</span>
+      <h2>{children}</h2>
+    </div>
+  );
 };
 
 export default Text;
