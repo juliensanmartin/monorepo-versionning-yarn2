@@ -27,14 +27,14 @@ jobs:
         run: yarn install
 
       - name: Create Release Pull Request
-        uses: changesets/action@v2
+        uses: changesets/action@master
         with:
           version: yarn version
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Publish to GH Package
-        uses: changesets/action@v2
+        uses: changesets/action@master
         with:
           registry-url: https://npm.pkg.github.com/
           publish: yarn release
