@@ -4,6 +4,14 @@
     "private": true,
     "description": "Share UI components",
     "main": "build/index.js",
+    "repository": {
+        "type": "git",
+        "url": "ssh://git@github.com/juliensanmartin/monorepo-versionning-yarn2.git",
+        "directory": "packages/shared"
+    },
+    "publishConfig": {
+        "registry": "https://npm.pkg.github.com/"
+    },
     "scripts": {
         "build": "tsc",
         "start": "tsc -w"
