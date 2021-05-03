@@ -9,30 +9,31 @@ jobs:
   release:
     name: Release
     runs-on: ubuntu-latest
-    - name: Checkout Repo
+    steps:
+      - name: Checkout Repo
         uses: actions/checkout@master
         with:
           fetch-depth: 0
 
-    - name: Setup Node.js 14.x
+      - name: Setup Node.js 14.x
         uses: actions/setup-node@v1
         with:
           node-version: 14
 
-    - name: Install Yarn
+      - name: Install Yarn
         run: npm install --global yarn
 
-    - name: Install Dependencies
+      - name: Install Dependencies
         run: yarn install
 
-    - name: Create Release Pull Request
+      - name: Create Release Pull Request
         uses: changesets/action@master
         with:
           version: yarn version
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}    
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-    - name: Publish to GH Package
+      - name: Publish to GH Package
         uses: changesets/action@master
         with:
           registry-url: https://npm.pkg.github.com/
