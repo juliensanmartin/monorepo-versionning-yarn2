@@ -6,7 +6,7 @@
     "main": "build/index.js",
     "repository": {
         "type": "git",
-        "url": "ssh://git@github.com/juliensanmartin/monorepo-versionning-yarn2.git",
+        "url": "git@github.com/juliensanmartin/monorepo-versionning-yarn2.git",
         "directory": "packages/shared"
     },
     "publishConfig": {
