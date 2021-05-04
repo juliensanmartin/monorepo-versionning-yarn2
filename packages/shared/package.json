@@ -5,7 +5,7 @@
     "main": "build/index.js",
     "publishConfig": {
         "registry": "https://npm.pkg.github.com"
-      },
+    },
     "scripts": {
         "build": "tsc",
         "start": "tsc -w"
