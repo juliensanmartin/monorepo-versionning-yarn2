@@ -1,7 +1,7 @@
 {
     "name": "@ui/shared",
     "version": "0.0.2",
-    "private": true,
+    "private": false,
     "description": "Share UI components",
     "main": "build/index.js",
     "repository": {
