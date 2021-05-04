@@ -1,14 +1,9 @@
 {
-    "name": "@ui/shared",
+    "name": "@monorepo-versionning-yarn2/shared",
     "version": "0.0.2",
-    "private": false,
     "description": "Share UI components",
     "main": "build/index.js",
-    "repository": {
-        "type": "git",
-        "url": "git@github.com/juliensanmartin/monorepo-versionning-yarn2.git",
-        "directory": "packages/shared"
-    },
+    "repository": "https://github.com/juliensanmartin/monorepo-versionning-yarn2/tree/main/packages/shared",
     "publishConfig": {
         "registry": "https://npm.pkg.github.com/@juliensanmartin"
     },

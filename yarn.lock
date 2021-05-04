@@ -2194,6 +2194,21 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@monorepo-versionning-yarn2/shared@workspace:packages/shared":
+  version: 0.0.0-use.local
+  resolution: "@monorepo-versionning-yarn2/shared@workspace:packages/shared"
+  dependencies:
+    "@types/react": ^17.0.0
+    "@types/react-dom": ^17.0.0
+    react: ^16.13.1
+    react-dom: ^16.13.1
+    typescript: 4.1.2
+  peerDependencies:
+    react: ^16.13.1
+    react-dom: ^16.13.1
+  languageName: unknown
+  linkType: soft
+
 "@nodelib/fs.scandir@npm:2.1.4":
   version: 2.1.4
   resolution: "@nodelib/fs.scandir@npm:2.1.4"
@@ -3025,21 +3040,6 @@ __metadata:
   checksum: 645896d05aa757fac02d952574ecda0eecd0be120162e28533c4528bb70d2162e9df62c3547217c69f18a72ceecaf212ea585afd20f976db64b59ac6de0d1ec8
   languageName: node
   linkType: hard
-
-"@ui/shared@workspace:packages/shared":
-  version: 0.0.0-use.local
-  resolution: "@ui/shared@workspace:packages/shared"
-  dependencies:
-    "@types/react": ^17.0.0
-    "@types/react-dom": ^17.0.0
-    react: ^16.13.1
-    react-dom: ^16.13.1
-    typescript: 4.1.2
-  peerDependencies:
-    react: ^16.13.1
-    react-dom: ^16.13.1
-  languageName: unknown
-  linkType: soft
 
 "@webassemblyjs/ast@npm:1.9.0":
   version: 1.9.0
@@ -10648,6 +10648,7 @@ fsevents@^1.2.7:
   version: 0.0.0-use.local
   resolution: "my-app@workspace:packages/my-app"
   dependencies:
+    "@monorepo-versionning-yarn2/shared": "workspace:packages/shared"
     "@testing-library/jest-dom": ^5.11.4
     "@testing-library/react": ^11.1.0
     "@testing-library/user-event": ^12.1.10
@@ -10655,7 +10656,6 @@ fsevents@^1.2.7:
     "@types/node": ^12.0.0
     "@types/react": ^17.0.0
     "@types/react-dom": ^17.0.0
-    "@ui/shared": "workspace:packages/shared"
     react: ^17.0.2
     react-dom: ^17.0.2
     react-scripts: 4.0.3

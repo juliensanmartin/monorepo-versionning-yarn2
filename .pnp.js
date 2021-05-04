@@ -27,14 +27,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         "reference": "workspace:packages/my-app"
       },
       {
-        "name": "@ui/shared",
+        "name": "@monorepo-versionning-yarn2/shared",
         "reference": "workspace:packages/shared"
       }
     ],
     "enableTopLevelFallback": true,
     "ignorePatternData": "(^(?:\\.yarn\\/sdks(?:\\/(?!\\.)(?:(?:(?!(?:^|\\/)\\.).)*?)|$))$)",
     "fallbackExclusionList": [
-      ["@ui/shared", ["virtual:2509f25549fb3398fb7e95f4acc454dfce2b867ae1391f90906ada47b1b86c4d4fa6c5624b14d801aea5b3436f9cda67b5f0565bca86c3570fd453a97cc37a48#workspace:packages/shared", "workspace:packages/shared"]],
+      ["@monorepo-versionning-yarn2/shared", ["virtual:2509f25549fb3398fb7e95f4acc454dfce2b867ae1391f90906ada47b1b86c4d4fa6c5624b14d801aea5b3436f9cda67b5f0565bca86c3570fd453a97cc37a48#workspace:packages/shared", "workspace:packages/shared"]],
       ["monorepo-versionning-yarn2", ["workspace:."]],
       ["my-app", ["workspace:packages/my-app"]]
     ],
@@ -4726,6 +4726,38 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["@monorepo-versionning-yarn2/shared", [
+        ["virtual:2509f25549fb3398fb7e95f4acc454dfce2b867ae1391f90906ada47b1b86c4d4fa6c5624b14d801aea5b3436f9cda67b5f0565bca86c3570fd453a97cc37a48#workspace:packages/shared", {
+          "packageLocation": "./.yarn/$$virtual/@monorepo-versionning-yarn2-shared-virtual-15088b2c2d/1/packages/shared/",
+          "packageDependencies": [
+            ["@monorepo-versionning-yarn2/shared", "virtual:2509f25549fb3398fb7e95f4acc454dfce2b867ae1391f90906ada47b1b86c4d4fa6c5624b14d801aea5b3436f9cda67b5f0565bca86c3570fd453a97cc37a48#workspace:packages/shared"],
+            ["@types/react", "npm:17.0.4"],
+            ["@types/react-dom", "npm:17.0.3"],
+            ["react", "npm:17.0.2"],
+            ["react-dom", "virtual:2509f25549fb3398fb7e95f4acc454dfce2b867ae1391f90906ada47b1b86c4d4fa6c5624b14d801aea5b3436f9cda67b5f0565bca86c3570fd453a97cc37a48#npm:17.0.2"],
+            ["typescript", "patch:typescript@npm%3A4.1.2#builtin<compat/typescript>::version=4.1.2&hash=a45b0e"]
+          ],
+          "packagePeers": [
+            "@types/react-dom",
+            "@types/react",
+            "react-dom",
+            "react"
+          ],
+          "linkType": "SOFT",
+        }],
+        ["workspace:packages/shared", {
+          "packageLocation": "./packages/shared/",
+          "packageDependencies": [
+            ["@monorepo-versionning-yarn2/shared", "workspace:packages/shared"],
+            ["@types/react", "npm:17.0.4"],
+            ["@types/react-dom", "npm:17.0.3"],
+            ["react", "npm:16.14.0"],
+            ["react-dom", "virtual:61839bab3aed21432e9b44bb290349453652b2bb5534622eb7a933b1745e04b7da45a6a50d3b4cc87c3967c319b2651546e8f58a3b25901bf6c95b988f278f4b#npm:16.14.0"],
+            ["typescript", "patch:typescript@npm%3A4.1.2#builtin<compat/typescript>::version=4.1.2&hash=a45b0e"]
+          ],
+          "linkType": "SOFT",
+        }]
+      ]],
       ["@nodelib/fs.scandir", [
         ["npm:2.1.4", {
           "packageLocation": "./.yarn/cache/@nodelib-fs.scandir-npm-2.1.4-6f6ddb2372-30b3102ee3.zip/node_modules/@nodelib/fs.scandir/",
@@ -5815,38 +5847,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-visitor-keys", "npm:2.0.0"]
           ],
           "linkType": "HARD",
-        }]
-      ]],
-      ["@ui/shared", [
-        ["virtual:2509f25549fb3398fb7e95f4acc454dfce2b867ae1391f90906ada47b1b86c4d4fa6c5624b14d801aea5b3436f9cda67b5f0565bca86c3570fd453a97cc37a48#workspace:packages/shared", {
-          "packageLocation": "./.yarn/$$virtual/@ui-shared-virtual-9b8e6d06a4/1/packages/shared/",
-          "packageDependencies": [
-            ["@ui/shared", "virtual:2509f25549fb3398fb7e95f4acc454dfce2b867ae1391f90906ada47b1b86c4d4fa6c5624b14d801aea5b3436f9cda67b5f0565bca86c3570fd453a97cc37a48#workspace:packages/shared"],
-            ["@types/react", "npm:17.0.4"],
-            ["@types/react-dom", "npm:17.0.3"],
-            ["react", "npm:17.0.2"],
-            ["react-dom", "virtual:2509f25549fb3398fb7e95f4acc454dfce2b867ae1391f90906ada47b1b86c4d4fa6c5624b14d801aea5b3436f9cda67b5f0565bca86c3570fd453a97cc37a48#npm:17.0.2"],
-            ["typescript", "patch:typescript@npm%3A4.1.2#builtin<compat/typescript>::version=4.1.2&hash=a45b0e"]
-          ],
-          "packagePeers": [
-            "@types/react-dom",
-            "@types/react",
-            "react-dom",
-            "react"
-          ],
-          "linkType": "SOFT",
-        }],
-        ["workspace:packages/shared", {
-          "packageLocation": "./packages/shared/",
-          "packageDependencies": [
-            ["@ui/shared", "workspace:packages/shared"],
-            ["@types/react", "npm:17.0.4"],
-            ["@types/react-dom", "npm:17.0.3"],
-            ["react", "npm:16.14.0"],
-            ["react-dom", "virtual:3a3c7c8c28ec7ab41c88a290b5e7584534bcc9042b53d445ca585dd8dcdd00861af5b38f545e7be607525ff9452c91c0096577e624e588fcb843c5927c7bf89f#npm:16.14.0"],
-            ["typescript", "patch:typescript@npm%3A4.1.2#builtin<compat/typescript>::version=4.1.2&hash=a45b0e"]
-          ],
-          "linkType": "SOFT",
         }]
       ]],
       ["@webassemblyjs/ast", [
@@ -14702,6 +14702,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./packages/my-app/",
           "packageDependencies": [
             ["my-app", "workspace:packages/my-app"],
+            ["@monorepo-versionning-yarn2/shared", "virtual:2509f25549fb3398fb7e95f4acc454dfce2b867ae1391f90906ada47b1b86c4d4fa6c5624b14d801aea5b3436f9cda67b5f0565bca86c3570fd453a97cc37a48#workspace:packages/shared"],
             ["@testing-library/jest-dom", "npm:5.12.0"],
             ["@testing-library/react", "virtual:2509f25549fb3398fb7e95f4acc454dfce2b867ae1391f90906ada47b1b86c4d4fa6c5624b14d801aea5b3436f9cda67b5f0565bca86c3570fd453a97cc37a48#npm:11.2.6"],
             ["@testing-library/user-event", "virtual:2509f25549fb3398fb7e95f4acc454dfce2b867ae1391f90906ada47b1b86c4d4fa6c5624b14d801aea5b3436f9cda67b5f0565bca86c3570fd453a97cc37a48#npm:12.8.3"],
@@ -14709,7 +14710,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/node", "npm:12.20.11"],
             ["@types/react", "npm:17.0.4"],
             ["@types/react-dom", "npm:17.0.3"],
-            ["@ui/shared", "virtual:2509f25549fb3398fb7e95f4acc454dfce2b867ae1391f90906ada47b1b86c4d4fa6c5624b14d801aea5b3436f9cda67b5f0565bca86c3570fd453a97cc37a48#workspace:packages/shared"],
             ["react", "npm:17.0.2"],
             ["react-dom", "virtual:2509f25549fb3398fb7e95f4acc454dfce2b867ae1391f90906ada47b1b86c4d4fa6c5624b14d801aea5b3436f9cda67b5f0565bca86c3570fd453a97cc37a48#npm:17.0.2"],
             ["react-scripts", "virtual:2509f25549fb3398fb7e95f4acc454dfce2b867ae1391f90906ada47b1b86c4d4fa6c5624b14d801aea5b3436f9cda67b5f0565bca86c3570fd453a97cc37a48#npm:4.0.3"],
@@ -17306,10 +17306,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD",
         }],
-        ["virtual:3a3c7c8c28ec7ab41c88a290b5e7584534bcc9042b53d445ca585dd8dcdd00861af5b38f545e7be607525ff9452c91c0096577e624e588fcb843c5927c7bf89f#npm:16.14.0", {
-          "packageLocation": "./.yarn/$$virtual/react-dom-virtual-35fb9787c5/0/cache/react-dom-npm-16.14.0-516a97ad33-a13558f0e7.zip/node_modules/react-dom/",
+        ["virtual:61839bab3aed21432e9b44bb290349453652b2bb5534622eb7a933b1745e04b7da45a6a50d3b4cc87c3967c319b2651546e8f58a3b25901bf6c95b988f278f4b#npm:16.14.0", {
+          "packageLocation": "./.yarn/$$virtual/react-dom-virtual-2abb9e3f4d/0/cache/react-dom-npm-16.14.0-516a97ad33-a13558f0e7.zip/node_modules/react-dom/",
           "packageDependencies": [
-            ["react-dom", "virtual:3a3c7c8c28ec7ab41c88a290b5e7584534bcc9042b53d445ca585dd8dcdd00861af5b38f545e7be607525ff9452c91c0096577e624e588fcb843c5927c7bf89f#npm:16.14.0"],
+            ["react-dom", "virtual:61839bab3aed21432e9b44bb290349453652b2bb5534622eb7a933b1745e04b7da45a6a50d3b4cc87c3967c319b2651546e8f58a3b25901bf6c95b988f278f4b#npm:16.14.0"],
             ["@types/react", "npm:17.0.4"],
             ["loose-envify", "npm:1.4.0"],
             ["object-assign", "npm:4.1.1"],
