@@ -1,6 +1,6 @@
 import React from "react";
 import logo from "./logo.svg";
-import { Text } from "@ui/shared";
+import { Text } from "@juliensanmartin/shared";
 import "./App.css";
 
 function App() {

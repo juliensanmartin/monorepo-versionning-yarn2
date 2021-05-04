@@ -1,11 +1,11 @@
 {
-    "name": "@monorepo-versionning-yarn2/shared",
+    "name": "@juliensanmartin/shared",
     "version": "0.0.2",
     "description": "Share UI components",
     "main": "build/index.js",
-    "repository": "https://github.com/juliensanmartin/monorepo-versionning-yarn2/tree/main/packages/shared",
-    "publishConfig": {
-        "registry": "https://npm.pkg.github.com/@juliensanmartin"
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/juliensanmartin/monorepo-versionning-yarn2.git"
     },
     "scripts": {
         "build": "tsc",
