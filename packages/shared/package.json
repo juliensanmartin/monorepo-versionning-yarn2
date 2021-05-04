@@ -4,7 +4,7 @@
     "description": "Share UI components",
     "main": "build/index.js",
     "publishConfig": {
-        "registry": "https://npm.pkg.github.com/juliensanmartin"
+        "registry": "https://npm.pkg.github.com"
       },
     "scripts": {
         "build": "tsc",
