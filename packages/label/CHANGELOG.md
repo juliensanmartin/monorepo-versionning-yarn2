@@ -1,5 +1,11 @@
 # @juliensanmartin/shared
 
+## 0.0.4
+
+### Patch Changes
+
+- fce69f3: update label and text
+
 ## 0.0.3
 
 ### Patch Changes
