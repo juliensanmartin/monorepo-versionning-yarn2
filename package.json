@@ -5,7 +5,10 @@
   "workspaces": [
     "packages/*"
   ],
-  "repository": "https://github.com/juliensanmartin/monorepo-versionning-yarn2",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juliensanmartin/monorepo-versionning-yarn2.git"
+  },
   "dependencies": {
     "@changesets/cli": "^2.16.0",
     "@types/jest": "^26.0.19",
