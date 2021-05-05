@@ -3,7 +3,7 @@
     "version": "0.0.3",
     "description": "Share UI components",
     "main": "build/index.js",
-    "repository": "git://github.com/juliensanmartin/monorepo-versionning-yarn2.git",
+    "repository": "juliensanmartin/shared",
     "scripts": {
         "build": "tsc",
         "start": "tsc -w"
