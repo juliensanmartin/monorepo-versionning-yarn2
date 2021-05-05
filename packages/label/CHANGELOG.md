@@ -1,5 +1,11 @@
 # @juliensanmartin/shared
 
+## 0.0.3
+
+### Patch Changes
+
+- 4426ec6: update footer of Label
+
 ## 0.0.2
 
 ### Patch Changes
