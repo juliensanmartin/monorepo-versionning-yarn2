@@ -9,6 +9,7 @@ const Text = ({ children }: Props) => {
     <div>
       <span>THIS IS TEXT COMPONENT</span>
       <h2>{children}</h2>
+      <span>ADD A FOOTER</span>
     </div>
   );
 };
