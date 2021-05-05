@@ -1,5 +1,11 @@
 # @juliensanmartin/shared
 
+## 0.1.0
+
+### Minor Changes
+
+- 2c6bdf4: minor upgrade of Text
+
 ## 0.0.3
 
 ### Patch Changes
