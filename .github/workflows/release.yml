@@ -19,10 +19,6 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: "14"
-          registry-url: "https://npm.pkg.github.com"
-          scope: "@juliensanmartin"
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NODE_AUTH_TOKEN }}
 
       - name: Install Yarn
         run: npm install --global yarn
@@ -43,8 +39,12 @@ jobs:
           echo "//npm.pkg.github.com/:_authToken=${{ secrets.NODE_AUTH_TOKEN }}" > ~/.npmrc
 
       - name: Publish to GH Package
+        uses: actions/setup-node@v2
         uses: changesets/action@master
         with:
+          node-version: "14"
+          registry-url: "https://npm.pkg.github.com"
+          scope: "@juliensanmartin"
           publish: yarn release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
