@@ -40,11 +40,12 @@ jobs:
 
       - name: Publish to GH Package
         uses: actions/setup-node@v2
-        uses: changesets/action@master
         with:
           node-version: "14"
           registry-url: "https://npm.pkg.github.com"
           scope: "@juliensanmartin"
+        uses: changesets/action@master
+        with:
           publish: yarn release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
