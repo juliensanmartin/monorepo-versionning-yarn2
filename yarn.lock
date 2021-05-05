@@ -2169,6 +2169,21 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@juliensanmartin/label@workspace:packages/label":
+  version: 0.0.0-use.local
+  resolution: "@juliensanmartin/label@workspace:packages/label"
+  dependencies:
+    "@types/react": ^17.0.0
+    "@types/react-dom": ^17.0.0
+    react: ^16.13.1
+    react-dom: ^16.13.1
+    typescript: 4.1.2
+  peerDependencies:
+    react: ^16.13.1
+    react-dom: ^16.13.1
+  languageName: unknown
+  linkType: soft
+
 "@juliensanmartin/shared@workspace:packages/shared":
   version: 0.0.0-use.local
   resolution: "@juliensanmartin/shared@workspace:packages/shared"

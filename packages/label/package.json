@@ -1,0 +1,25 @@
+{
+    "name": "@juliensanmartin/label",
+    "version": "0.0.1",
+    "description": "Label UI components",
+    "main": "build/index.js",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/juliensanmartin/monorepo-versionning-yarn2.git"
+    },
+    "scripts": {
+        "build": "tsc",
+        "start": "tsc -w"
+    },
+    "devDependencies": {
+        "@types/react": "^17.0.0",
+        "@types/react-dom": "^17.0.0",
+        "react": "^16.13.1",
+        "react-dom": "^16.13.1",
+        "typescript": "4.1.2"
+    },
+    "peerDependencies": {
+        "react": "^16.13.1",
+        "react-dom": "^16.13.1"
+    }
+}
