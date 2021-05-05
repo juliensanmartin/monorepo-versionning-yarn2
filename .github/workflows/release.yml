@@ -39,7 +39,7 @@ jobs:
           echo ${{github.event}}
 
       - name: Authenticate with GitHub package registry
-        if: ${{contains(github.event.head_commit.message, 'Version Packages')"}}
+        if: ${{contains(github.event.head_commit.message, 'Version Packages')}}
         run:
           echo "registry=https://npm.pkg.github.com/juliensanmartin" > ~/.npmrc
           echo "//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}" > ~/.npmrc
@@ -50,7 +50,7 @@ jobs:
       #     registry-url: "https://npm.pkg.github.com"
       #     scope: "@juliensanmartin"
       - name: Publish to GH Package
-        if: ${{contains(github.event.head_commit.message, 'Version Packages')"}}
+        if: ${{contains(github.event.head_commit.message, 'Version Packages')}}
         uses: changesets/action@master
         with:
           publish: yarn release
