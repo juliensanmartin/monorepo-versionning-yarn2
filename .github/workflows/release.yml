@@ -38,11 +38,11 @@ jobs:
           echo "registry=https://npm.pkg.github.com/juliensanmartin" > ~/.npmrc
           echo "//npm.pkg.github.com/:_authToken=${{ secrets.NODE_AUTH_TOKEN }}" > ~/.npmrc
 
-      - uses: actions/setup-node@v2
-        with:
-          node-version: "14"
-          registry-url: "https://npm.pkg.github.com"
-          scope: "@juliensanmartin"
+      # - uses: actions/setup-node@v2
+      #   with:
+      #     node-version: "14"
+      #     registry-url: "https://npm.pkg.github.com"
+      #     scope: "@juliensanmartin"
       - name: Publish to GH Package
         uses: changesets/action@master
         with:
