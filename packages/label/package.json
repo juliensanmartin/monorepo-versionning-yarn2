@@ -1,6 +1,6 @@
 {
     "name": "@juliensanmartin/label",
-    "version": "0.0.5",
+    "version": "0.1.0",
     "description": "Label UI components",
     "main": "build/index.js",
     "repository": {

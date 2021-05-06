@@ -1,5 +1,11 @@
 # @juliensanmartin/shared
 
+## 0.1.3
+
+### Patch Changes
+
+- 3fc1b1a: Update Label and Shared
+
 ## 0.1.2
 
 ### Patch Changes
