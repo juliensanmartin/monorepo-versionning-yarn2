@@ -36,7 +36,7 @@ jobs:
       - name: Authenticate with GitHub package registry
         if: "contains(github.event.head_commit.message, 'Version Packages')"
         run:
-          echo "registry=https://npm.pkg.github.com/juliensanmartin" > ~/.npmrc
+          echo "@juliensanmartin:registry=https://npm.pkg.github.com" > ~/.npmrc
           echo "//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}" > ~/.npmrc
 
       # - uses: actions/setup-node@v2
