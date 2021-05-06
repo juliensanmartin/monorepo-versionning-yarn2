@@ -1,6 +1,6 @@
 {
     "name": "@juliensanmartin/shared",
-    "version": "0.1.2",
+    "version": "0.1.3",
     "description": "Share UI components",
     "main": "build/index.js",
     "repository": {
