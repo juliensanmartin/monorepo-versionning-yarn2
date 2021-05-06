@@ -3,11 +3,16 @@
     "version": "0.1.0",
     "description": "Label UI components",
     "main": "build/index.js",
-    "repository": "https://github.com/juliensanmartin/monorepo-versionning-yarn2",
-    "access": "public",
     "publishConfig": {
+        "registry": "https://npm.pkg.github.com",
         "access": "public"
     },
+    "repository": {
+        "type": "git",
+        "url": "ssh://git@github.com/juliensanmartin/monorepo-versionning-yarn2.git",
+        "directory": "packages/label"
+    },
+    "access": "public",
     "scripts": {
         "build": "tsc",
         "start": "tsc -w"
