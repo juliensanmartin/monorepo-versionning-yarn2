@@ -5,6 +5,9 @@
     "main": "build/index.js",
     "repository": "https://github.com/juliensanmartin/monorepo-versionning-yarn2",
     "access": "public",
+    "publishConfig": {
+        "access": "public"
+    },
     "scripts": {
         "build": "tsc",
         "start": "tsc -w"
