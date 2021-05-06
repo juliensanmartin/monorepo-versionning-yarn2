@@ -1,5 +1,11 @@
 # @juliensanmartin/shared
 
+## 0.1.1
+
+### Patch Changes
+
+- a74f2e9: updat elabel
+
 ## 0.1.0
 
 ### Minor Changes
