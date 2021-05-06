@@ -4,6 +4,7 @@
     "description": "Label UI components",
     "main": "build/index.js",
     "repository": "https://github.com/juliensanmartin/monorepo-versionning-yarn2",
+    "access": "public",
     "scripts": {
         "build": "tsc",
         "start": "tsc -w"
