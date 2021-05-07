@@ -6,7 +6,6 @@
     "packages/*"
   ],
   "repository": "https://github.com/juliensanmartin/monorepo-versionning-yarn2",
-
   "dependencies": {
     "@changesets/cli": "^2.16.0",
     "@types/jest": "^26.0.19",
@@ -20,6 +19,12 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "changeset": "changeset",
     "version": "changeset version",
-    "release": "yarn workspaces foreach run build && changeset publish"
+    "release": "yarn workspaces foreach run build && changeset publish",
+    "postinstall": "husky install"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^12.1.1",
+    "@commitlint/config-conventional": "^12.1.1",
+    "husky": "^6.0.0"
   }
 }
