@@ -1,5 +1,11 @@
 # @juliensanmartin/shared
 
+## 0.1.2
+
+### Patch Changes
+
+- c131608: Update the Label Component
+
 ## 0.1.1
 
 ### Patch Changes
