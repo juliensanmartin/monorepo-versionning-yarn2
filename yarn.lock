@@ -2340,6 +2340,22 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@juliensanmartin/button@workspace:packages/button":
+  version: 0.0.0-use.local
+  resolution: "@juliensanmartin/button@workspace:packages/button"
+  dependencies:
+    "@juliensanmartin/label": "workspace:packages/label"
+    "@types/react": ^17.0.0
+    "@types/react-dom": ^17.0.0
+    react: ^16.13.1
+    react-dom: ^16.13.1
+    typescript: 4.1.2
+  peerDependencies:
+    react: ^16.13.1
+    react-dom: ^16.13.1
+  languageName: unknown
+  linkType: soft
+
 "@juliensanmartin/label@workspace:packages/label":
   version: 0.0.0-use.local
   resolution: "@juliensanmartin/label@workspace:packages/label"
@@ -10999,6 +11015,7 @@ fsevents@^1.2.7:
   version: 0.0.0-use.local
   resolution: "my-app@workspace:packages/my-app"
   dependencies:
+    "@juliensanmartin/button": "workspace:packages/button"
     "@juliensanmartin/shared": "workspace:packages/shared"
     "@testing-library/jest-dom": ^5.11.4
     "@testing-library/react": ^11.1.0

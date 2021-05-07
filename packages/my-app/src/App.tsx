@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "./logo.svg";
 import { Text } from "@juliensanmartin/shared";
+import { Text as TextButton } from "@juliensanmartin/button";
 import "./App.css";
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
         <Text>HUHU</Text>
+        <TextButton>HAHA</TextButton>
         <a
           className="App-link"
           href="https://reactjs.org"
