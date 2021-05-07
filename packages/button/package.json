@@ -17,8 +17,10 @@
         "build": "tsc",
         "start": "tsc -w"
     },
+    "dependencies": {
+        "@juliensanmartin/label": "workspace:packages/label"
+    },
     "devDependencies": {
-        "@juliensanmartin/label": "workspace:packages/label",
         "@types/react": "^17.0.0",
         "@types/react-dom": "^17.0.0",
         "react": "^16.13.1",
